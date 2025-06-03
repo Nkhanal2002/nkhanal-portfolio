@@ -84,9 +84,9 @@ export function AboutSection() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-2 rounded-md transition-all ${
+                className={`px-6 py-2 rounded-md transition-all hover:cursor-pointer ${
                   activeTab === tab.id
-                    ? "bg-[#15D3E0] text-white shadow-sm"
+                    ? "bg-[#15D3E0] hover:bg-[#13c4d1] text-white shadow-sm"
                     : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
                 }`}
               >
@@ -110,10 +110,13 @@ export function AboutSection() {
                       NJ, originally from Nepal 🇳🇵.
                     </p>
                     <p>
-                      As an aspiring <strong>Software Engineer</strong>, I focus
-                      on full-stack web development with JavaScript/TypeScript,
-                      React, Next.js, and Node.js. I enjoy both frontend design
-                      and backend architecture.
+                      As an aspiring{" "}
+                      <strong className="text-[#15D3E0]">
+                        Software Engineer
+                      </strong>
+                      , I focus on full-stack web development with
+                      JavaScript/TypeScript, React, Next.js, and Node.js. I
+                      enjoy both frontend design and backend architecture.
                     </p>
                     <p>
                       Beyond coding, I&apos;m active in leadership roles and

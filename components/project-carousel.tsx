@@ -207,7 +207,7 @@ export function ProjectCarousel({
                       variant="default"
                       size="sm"
                       asChild
-                      className="bg-[#15D3E0] hover:bg-[#13c4d1] text-white font-medium w-full sm:w-auto"
+                      className="bg-[#15D3E0] hover:bg-[#13c4d1] cursor-pointer text-white font-medium w-full sm:w-auto"
                     >
                       <a
                         href={currentProject.link}

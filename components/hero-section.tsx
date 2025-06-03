@@ -30,7 +30,7 @@ export function HeroSection() {
 
             <div className="media-info space-y-5 text-sm sm:text-base">
               <div className="resume-btn">
-                <button className="p-[0.2rem] rounded-sm sm:font-medium text-black bg-[#15D3E0] shadow-sm px-2 font-medium hover:cursor-pointer bg-custom-teal hover:scale-105 transition-transform">
+                <button className="p-[0.2rem] rounded-sm sm:font-medium text-white dark:text-black bg-[#15D3E0] shadow-sm px-2 font-medium hover:cursor-pointer hover:bg-[#13c4d1] bg-custom-teal transition-transform">
                   <a
                     href="/RESUME_NARAYANKHANAL.pdf"
                     target="_blank"

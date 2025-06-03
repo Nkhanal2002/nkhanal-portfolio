@@ -17,3 +17,7 @@ This is a fully responsive and interactive personal portfolio website showcasing
 - **Styling**: Tailwind CSS v4, shadcn/ui
 - **Icons**: Lucide React, FontAwesome
 - **Deployment**: Vercel
+
+### Gratitude
+
+Thank you for taking your time to read through my project. Your support and feedback are much appreciated.

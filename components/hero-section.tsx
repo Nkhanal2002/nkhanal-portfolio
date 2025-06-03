@@ -1,15 +1,13 @@
-import Image from "next/image";
-
 export function HeroSection() {
   return (
     <div
-      className="eachSection bg-background dark:bg-background text-foreground flex justify-center items-center min-h-screen transition-colors"
+      className="eachSection bg-gray-100 dark:bg-gray-900 text-foreground flex justify-center items-center min-h-screen transition-colors"
       id="home"
     >
       <div className="home-container flex flex-col-reverse my-5 sm:my-0 sm:flex-row sm:justify-evenly sm:items-center py-4 px-2 sm:pb-[4rem]">
-        <section className="section1 text-center sm:bg-card/80 dark:sm:bg-card/50 px-1 sm:text-left sm:w-[55%] sm:rounded-md sm:shadow-md sm:mt-[2rem] sm:px-3 py-4 backdrop-blur-sm transition-colors">
+        <section className="section1 bg-slate-100 dark:bg-gray-800 text-center sm:bg-card/80 dark:sm:bg-card/50 px-1 sm:text-left sm:w-[55%] sm:rounded-md sm:shadow-md sm:mt-[2rem] sm:px-3 py-4 backdrop-blur-sm transition-colors">
           <div className="header">
-            <h1 className="text-xl md:text-2xl font-bold lg:text-3xl text-custom-teal animate-pulse">
+            <h1 className="text-xl text-[#15D3E0] md:text-2xl font-bold lg:text-3xl text-custom-teal">
               Narayan Khanal
             </h1>
             <h2 className="text-base sm:text-lg md:text-xl">
@@ -32,7 +30,7 @@ export function HeroSection() {
 
             <div className="media-info space-y-5 text-sm sm:text-base">
               <div className="resume-btn">
-                <button className="p-[0.2rem] rounded-sm sm:font-medium text-primary-foreground shadow-sm px-2 font-medium hover:cursor-pointer bg-custom-teal hover:scale-105 transition-transform">
+                <button className="p-[0.2rem] rounded-sm sm:font-medium text-black bg-[#15D3E0] shadow-sm px-2 font-medium hover:cursor-pointer bg-custom-teal hover:scale-105 transition-transform">
                   <a
                     href="/RESUME_NARAYANKHANAL.pdf"
                     target="_blank"
@@ -45,7 +43,7 @@ export function HeroSection() {
 
               <div className="social-media">
                 <div className="flex flex-col sm:flex-row justify-center items-center sm:justify-start sm:gap-1">
-                  <div className="sm:border-b sm:border-b-custom-teal sm:w-fit sm:mb-2">
+                  <div className="flex justify-center items-center gap-2 sm:border-b-2 sm:border-b-[#15D3E0] sm:w-fit sm:mb-2">
                     <span>Connect Me</span>
                     <div>
                       <i className="fa-solid fa-arrow-down animate-bounce"></i>
@@ -82,7 +80,7 @@ export function HeroSection() {
 
               <div className="email">
                 <div className="flex flex-col sm:flex-row justify-center items-center sm:justify-start sm:gap-1">
-                  <div className="sm:border-b sm:border-b-custom-teal sm:w-fit sm:mb-2">
+                  <div className="flex justify-center items-center gap-2 sm:border-b-2 sm:border-b-[#15D3E0] sm:w-fit sm:mb-2">
                     <span>Email Me</span>
                     <div>
                       <i className="fa-solid fa-arrow-down animate-bounce"></i>
@@ -105,14 +103,11 @@ export function HeroSection() {
         </section>
 
         <section className="section2 my-[1rem] h-[14rem]">
-          <Image
-            src="/placeholder.svg?height=224&width=224"
+          <img
+            src="/Images/Avatar.png?height=224&width=224"
             alt="Narayan Khanal's Avatar"
-            width={224}
-            height={224}
-            className="mt-8 myimage mx-auto w-[9rem] sm:-mt-10 sm:w-[14rem] ease-in duration-300 rounded-full"
+            className="mt-8 myimage mx-auto w-[9rem] sm:-mt-10 sm:w-[14rem] ease-in duration-300"
             title="Narayan Khanal's Avatar"
-            priority
           />
         </section>
       </div>

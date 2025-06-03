@@ -4,9 +4,62 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Narayan Khanal | CS Enthusiast",
+  title: "Narayan Khanal | CS Enthusiast & Software Engineer",
   description:
-    "Hey, it's me Narayan Khanal - a CS enthusiast. I want to contribute my tech skills and expertise towards the tech industry.",
+    "Narayan Khanal - Computer Science student at Caldwell University. Full-stack developer specializing in React, Next.js, TypeScript, and modern web technologies. View my projects and experience.",
+  keywords: [
+    "Narayan Khanal",
+    "Software Engineer",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js",
+    "TypeScript",
+    "Computer Science",
+    "Caldwell University",
+    "Web Developer",
+    "Portfolio",
+  ],
+  authors: [{ name: "Narayan Khanal" }],
+  creator: "Narayan Khanal",
+  publisher: "Narayan Khanal",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://nkhanal-portfolio.vercel.app",
+    title: "Narayan Khanal | CS Enthusiast & Software Engineer",
+    description:
+      "Computer Science student and aspiring Software Engineer. Explore my projects, experience, and technical skills in full-stack web development.",
+    siteName: "Narayan Khanal Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Narayan Khanal - Software Engineer Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Narayan Khanal | CS Enthusiast & Software Engineer",
+    description:
+      "Computer Science student and aspiring Software Engineer. Explore my projects and technical skills.",
+    images: ["/og-image.png"],
+  },
+  verification: {
+    google: "xGhXi1joti9rFHISixCqMDuyWb9bUTvos5vIZDtjhEA",
+  },
 };
 
 export default function RootLayout({
@@ -23,6 +76,38 @@ export default function RootLayout({
           integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
+        />
+        <link rel="canonical" href="https://nkhanal-portfolio.vercel.app" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Narayan Khanal",
+              jobTitle: "Computer Science Student & Aspiring Software Engineer",
+              url: "https://nkhanal-portfolio.vercel.app",
+              sameAs: [
+                "https://www.linkedin.com/in/narayan-khanal-15a5b81aa/",
+                "https://github.com/Nkhanal2002",
+              ],
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "Caldwell University",
+              },
+              knowsAbout: [
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "Next.js",
+                "Node.js",
+                "Full Stack Development",
+                "Python",
+                "PostgreSQL",
+                "MongoDB",
+              ],
+            }),
+          }}
         />
       </head>
       <body className="relative font-serif">

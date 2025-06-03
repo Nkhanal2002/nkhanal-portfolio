@@ -1,0 +1,16 @@
+{
+  "name": "Narayan Khanal - Portfolio",
+  "short_name": "Narayan Khanal",
+  "description": "Computer Science student and aspiring Software Engineer portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#15D3E0",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

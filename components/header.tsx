@@ -28,7 +28,7 @@ export function Header({ activeSection, onNavigate }: HeaderProps) {
     <header className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white fixed top-0 left-0 right-0 z-50 shadow-sm transition-colors">
       <nav className="m-0 relative lg:max-w-[80rem] text-sm md:text-base mx-auto sm:py-2">
         <div className="nav-bar flex flex-row sm:flex-row justify-between items-center">
-          <div className="nav-logo p-[0.5rem] text-[#15D3E0] uppercase font-bold mx-2">
+          <div className="nav-logo p-[0.5rem] text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066] dark:text-[#15D3E0] uppercase font-bold mx-2">
             Nkhanal
           </div>
 

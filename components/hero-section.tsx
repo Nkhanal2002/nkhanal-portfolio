@@ -5,9 +5,9 @@ export function HeroSection() {
       id="home"
     >
       <div className="home-container flex flex-col-reverse my-5 sm:my-0 sm:flex-row sm:justify-evenly sm:items-center py-4 px-2 sm:pb-[4rem]">
-        <section className="section1 bg-slate-100 dark:bg-gray-800 text-center sm:bg-card/80 dark:sm:bg-card/50 px-1 sm:text-left sm:w-[55%] sm:rounded-md sm:shadow-md sm:mt-[2rem] sm:px-3 py-4 backdrop-blur-sm transition-colors">
+        <section className="section1 bg-slate-100 dark:bg-gray-900 sm:dark:bg-gray-800 text-center sm:bg-card/80 dark:sm:bg-card/50 px-1 sm:text-left sm:w-[55%] sm:rounded-md sm:shadow-md sm:mt-[2rem] sm:px-3 py-4 backdrop-blur-sm transition-colors">
           <div className="header">
-            <h1 className="text-xl text-[#15D3E0] md:text-2xl font-bold lg:text-3xl text-custom-teal">
+            <h1 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066] dark:text-[#15D3E0] md:text-2xl font-bold lg:text-3xl text-custom-teal">
               Narayan Khanal
             </h1>
             <h2 className="text-base sm:text-lg md:text-xl">
@@ -36,7 +36,8 @@ export function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fa-solid fa-download mr-[0.3rem]"></i>Resume
+                    <i className="fa-solid fa-download mr-[0.3rem]"></i>
+                    Resume
                   </a>
                 </button>
               </div>
@@ -60,7 +61,7 @@ export function HeroSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <i className="fa-brands fa-linkedin text-2xl hover:cursor-pointer hover:rotate-[20deg] hover:text-blue-400 transition duration-150 ease-in"></i>
+                      <i className="mt-1 fa-brands fa-linkedin text-xl hover:cursor-pointer hover:rotate-[20deg] hover:text-blue-400 transition duration-150 ease-in"></i>
                     </a>
                   </div>
 
@@ -72,7 +73,7 @@ export function HeroSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <i className="fa-brands fa-github text-2xl hover:cursor-pointer hover:rotate-[20deg] hover:text-blue-400 transition duration-150 ease-in"></i>
+                      <i className="mt-1 fa-brands fa-github text-xl hover:cursor-pointer hover:rotate-[20deg] hover:text-blue-400 transition duration-150 ease-in"></i>
                     </a>
                   </div>
                 </div>

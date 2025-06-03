@@ -7,7 +7,7 @@ export function ProjectsSection() {
     {
       title: "ShareSphere Web App",
       description: [
-        "Full-stack marketplace for students to share books, clothing, and furniture",
+        "Collaborated with a friend to build a full-stack platform for student resource sharing",
         "Built with React, Express.js, and PostgreSQL for scalable performance",
         "Features secure authentication and real-time collaboration",
         "Integrated Cloudinary for cloud storage and RESTful APIs",
@@ -125,7 +125,10 @@ export function ProjectsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">
-            My <span className="text-[#15D3E0]">Projects</span>
+            My{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066] dark:text-[#15D3E0]">
+              Projects
+            </span>
           </h1>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Explore my portfolio of web applications, full-stack projects, and

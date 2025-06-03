@@ -268,7 +268,7 @@ export function ContactSection() {
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
                     I&apos;m always open to discussing new opportunities,
                     collaborations, and innovative projects. Whether you have a
-                    specific project in mind or just want to connect, you&apos;d
+                    specific project in mind or just want to connect, I&apos;d
                     love to hear from you.
                   </p>
                 </div>

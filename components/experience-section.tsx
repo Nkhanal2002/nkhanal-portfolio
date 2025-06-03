@@ -49,7 +49,7 @@ export function ExperienceSection() {
     >
       <h1 className="text-2xl font-bold lg:text-3xl text-center mb-8">
         Work{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] to-[#136066]">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] to-[#136066] dark:text-[#15D3E0]">
           Experience
         </span>
       </h1>
@@ -67,7 +67,7 @@ export function ExperienceSection() {
               {/* Experience card */}
               <div className="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                  <h3 className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066]">
+                  <h3 className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066] dark:text-[#15D3E0]">
                     {exp.title}
                   </h3>
                   <span className="text-sm text-gray-600 dark:text-gray-300 font-medium">

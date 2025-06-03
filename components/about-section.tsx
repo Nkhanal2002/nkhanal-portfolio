@@ -70,7 +70,10 @@ export function AboutSection() {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold mb-4">
-            About <span className="text-[#15D3E0] dark:text-[#15D3E0]">Me</span>
+            About{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066] dark:text-[#15D3E0]">
+              Me
+            </span>
           </h1>
         </div>
 

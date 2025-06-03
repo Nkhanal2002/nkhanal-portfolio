@@ -23,9 +23,9 @@ export function ContactSection() {
             Get In <span className="text-[#15D3E0]">Touch</span>
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Have a project in mind? Let's start building together! I'm always
-            excited to work on new challenges and collaborate on innovative
-            solutions.
+            Have a project in mind? Let&apos;s start building together! I&apos;m
+            always excited to work on new challenges and collaborate on
+            innovative solutions.
           </p>
         </div>
 
@@ -263,13 +263,13 @@ export function ContactSection() {
               <CardContent className="p-6">
                 <div className="text-center">
                   <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
-                    Let's Build Something Amazing Together!
+                    Let&apos;s Build Something Amazing Together!
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    I'm always open to discussing new opportunities,
+                    I&apos;m always open to discussing new opportunities,
                     collaborations, and innovative projects. Whether you have a
-                    specific project in mind or just want to connect, I'd love
-                    to hear from you.
+                    specific project in mind or just want to connect, you&apos;d
+                    love to hear from you.
                   </p>
                 </div>
               </CardContent>

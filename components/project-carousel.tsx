@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, ExternalLink, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 interface Project {
   title: string;
@@ -89,10 +90,13 @@ export function ProjectCarousel({
             <div className="flex flex-col lg:flex-row min-h-[600px]">
               {/* Project Image */}
               <div className="lg:w-2/5 relative overflow-hidden bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
-                <img
+                <Image
                   src={currentProject.image || "/placeholder.svg"}
                   alt={currentProject.title}
+                  width={600}
+                  height={400}
                   className="w-full h-auto max-h-full object-contain p-2 transition-transform duration-300 hover:scale-105"
+                  priority={currentIndex === 0}
                 />
 
                 {/* Project number indicator with improved visibility */}

@@ -30,7 +30,11 @@ export function AboutSection() {
     { name: "Figma", level: 80, icon: "🎯" },
   ];
 
-  const SkillCard = ({ skill }: { skill: any }) => (
+  const SkillCard = ({
+    skill,
+  }: {
+    skill: { name: string; level: number; icon: string };
+  }) => (
     <div className="flex items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
       <div className="flex items-center space-x-3">
         <span className="text-lg">{skill.icon}</span>
@@ -97,7 +101,7 @@ export function AboutSection() {
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="md:col-span-2 space-y-4 text-gray-700 dark:text-gray-300">
                     <p>
-                      Hello 👋! I'm{" "}
+                      Hello 👋! I&apos;m{" "}
                       <strong className="text-[#15D3E0]">Narayan Khanal</strong>
                       , a Computer Science undergraduate at Caldwell University,
                       NJ, originally from Nepal 🇳🇵.
@@ -109,10 +113,10 @@ export function AboutSection() {
                       and backend architecture.
                     </p>
                     <p>
-                      Beyond coding, I'm active in leadership roles and
-                      mentoring fellow students. I'm passionate about creating
-                      innovative solutions and making a positive impact through
-                      technology.
+                      Beyond coding, I&apos;m active in leadership roles and
+                      mentoring fellow students. I&apos;m passionate about
+                      creating innovative solutions and making a positive impact
+                      through technology.
                     </p>
 
                     <div className="flex flex-wrap gap-2 pt-4">

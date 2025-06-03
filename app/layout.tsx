@@ -4,7 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Narayan Khanal | CS Enthusiast & Software Engineer",
+  title: "Narayan Khanal | CS Enthusiast",
   description:
     "Narayan Khanal - Computer Science student at Caldwell University. Full-stack developer specializing in React, Next.js, TypeScript, and modern web technologies. View my projects and experience.",
   keywords: [
@@ -52,13 +52,41 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Narayan Khanal | CS Enthusiast & Software Engineer",
+    title: "Narayan Khanal | CS Enthusiast",
     description:
       "Computer Science student and aspiring Software Engineer. Explore my projects and technical skills.",
     images: ["/og-image.png"],
   },
   verification: {
     google: "xGhXi1joti9rFHISixCqMDuyWb9bUTvos5vIZDtjhEA",
+  },
+  icons: {
+    icon: [
+      { url: "/Favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/Favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/Favicons/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      {
+        url: "/Favicons/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+    other: [
+      {
+        rel: "icon",
+        url: "/Favicons/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/Favicons/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
   },
 };
 

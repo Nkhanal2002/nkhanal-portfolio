@@ -5,39 +5,56 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Code, Database, Globe } from "lucide-react";
+import Image from "next/image";
 
 export function AboutSection() {
   const [activeTab, setActiveTab] = useState("overview");
 
   const programmingLanguages = [
-    { name: "JavaScript", level: 90, icon: "🟨" },
-    { name: "TypeScript", level: 85, icon: "🔷" },
-    { name: "Python", level: 80, icon: "🐍" },
-    { name: "HTML/CSS", level: 95, icon: "🌐" },
+    { name: "JavaScript", level: 90, iconImageLink: "/Images/JSlogo.png" },
+    { name: "TypeScript", level: 85, iconImageLink: "/Images/ts-logo.png" },
+    { name: "Python", level: 80, iconImageLink: "/Images/Pythonlogo.png" },
+    { name: "HTML/CSS", level: 95, iconImageLink: "/Images/Html5logo.png" },
   ];
 
   const frameworks = [
-    { name: "Next.js", level: 88, icon: "⚫" },
-    { name: "React.js", level: 90, icon: "⚛️" },
-    { name: "Tailwind CSS", level: 92, icon: "🎨" },
-    { name: "Node.js", level: 75, icon: "🟢" },
+    { name: "Next.js", level: 88, iconImageLink: "/Images/NextJSlogo.webp" },
+    { name: "React.js", level: 90, iconImageLink: "/Images/reactLogo.svg" },
+    {
+      name: "Tailwind CSS",
+      level: 92,
+      iconImageLink: "/Images/tailwindcssLogo.png",
+    },
+    { name: "Node.js", level: 75, iconImageLink: "/Images/NodeJS logo.webp" },
   ];
 
   const tools = [
-    { name: "MongoDB", level: 70, icon: "🍃" },
-    { name: "PostgreSQL", level: 75, icon: "🐘" },
-    { name: "Git", level: 85, icon: "📚" },
-    { name: "Figma", level: 80, icon: "🎯" },
+    { name: "MongoDB", level: 70, iconImageLink: "/Images/MongoDBLogo.svg" },
+    {
+      name: "PostgreSQL",
+      level: 75,
+      iconImageLink: "/Images/postgreSQLLogo.png",
+    },
+    { name: "Git", level: 85, iconImageLink: "/Images/GitLogo.png" },
+    { name: "Figma", level: 80, iconImageLink: "/Images/FigmaLogo.png" },
   ];
 
   const SkillCard = ({
     skill,
   }: {
-    skill: { name: string; level: number; icon: string };
+    skill: { name: string; level: number; iconImageLink: string };
   }) => (
     <div className="flex items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
       <div className="flex items-center space-x-3">
-        <span className="text-lg">{skill.icon}</span>
+        <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
+          <Image
+            src={`${skill.iconImageLink}`}
+            width={24}
+            height={24}
+            alt={`${skill.name} icon`}
+            className="w-6 h-6 object-contain"
+          />
+        </div>
         <span className="font-medium text-gray-900 dark:text-white">
           {skill.name}
         </span>

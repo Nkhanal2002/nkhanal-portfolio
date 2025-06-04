@@ -133,7 +133,7 @@ export function ContactSection() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-[#15D3E0] hover:bg-[#13c4d1] text-white font-medium py-3 sm:py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] h-12 sm:h-14"
+                  className="w-full bg-[#15D3E0] hover:bg-[#13c4d1] text-white dark:text-black font-medium py-3 sm:py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] h-12 sm:h-14"
                 >
                   <Send className="mr-2 h-4 w-4" />
                   Send Message
@@ -228,7 +228,7 @@ export function ContactSection() {
                     variant="outline"
                     size="lg"
                     asChild
-                    className="flex-1 py-1 border-[#15D3E0]/30 hover:border-[#15D3E0] hover:bg-[#15D3E0]/10 transition-all duration-200 dark:border-gray-700 dark:hover:bg-gray-700 h-12 sm:h-auto"
+                    className="flex-1 py-1 border-[#15D3E0]/30 hover:border-[#15D3E0] hover:bg-[#15D3E0]/10 transition-all duration-200 dark:bg-slate-800 dark:border-gray-700 dark:hover:bg-gray-700 h-12 sm:h-auto"
                   >
                     <a
                       href="https://www.linkedin.com/in/narayan-khanal-15a5b81aa/"
@@ -245,7 +245,7 @@ export function ContactSection() {
                     variant="outline"
                     size="lg"
                     asChild
-                    className="flex-1 py-1 border-[#15D3E0]/30 hover:border-[#15D3E0] hover:bg-[#15D3E0]/10 transition-all duration-200 dark:border-gray-700 dark:hover:bg-gray-700 h-12 sm:h-auto"
+                    className="flex-1 py-1 border-[#15D3E0]/30 hover:border-[#15D3E0] hover:bg-[#15D3E0]/10 transition-all duration-200 dark:bg-slate-800 dark:border-gray-700 dark:hover:bg-gray-700 h-12 sm:h-auto"
                   >
                     <a
                       href="https://github.com/Nkhanal2002"

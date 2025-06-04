@@ -44,7 +44,7 @@ export function AboutSection() {
   }: {
     skill: { name: string; level: number; iconImageLink: string };
   }) => (
-    <div className="flex items-center justify-between p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+    <div className="flex items-center justify-between p-3 bg-white  dark:bg-gray-800 rounded-lg shadow-sm">
       <div className="flex items-center space-x-3">
         <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
           <Image
@@ -103,7 +103,7 @@ export function AboutSection() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-6 py-2 rounded-md transition-all hover:cursor-pointer ${
                   activeTab === tab.id
-                    ? "bg-[#15D3E0] hover:bg-[#13c4d1] text-white shadow-sm"
+                    ? "bg-[#15D3E0] hover:bg-[#13c4d1] text-white dark:text-black shadow-sm"
                     : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
                 }`}
               >
@@ -145,9 +145,11 @@ export function AboutSection() {
                     <div className="flex flex-wrap gap-2 pt-4">
                       {[
                         "Web Development",
+                        "Full-Stack Web Development",
                         "UI/UX Design",
                         "Problem Solving",
                         "Open Source",
+                        "IT Troubleshooting",
                       ].map((interest) => (
                         <Badge
                           key={interest}

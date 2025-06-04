@@ -121,7 +121,7 @@ export function ProjectCarousel({
                 />
 
                 {/* Project number indicator */}
-                <div className="absolute top-2 left-2 sm:top-4 sm:left-4 bg-[#15D3E0] text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-semibold shadow-md">
+                <div className="absolute top-2 left-2 sm:top-4 sm:left-4 bg-[#15D3E0] text-white dark:text-black px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-semibold shadow-md">
                   {currentIndex + 1} / {projects.length}
                 </div>
               </div>
@@ -208,7 +208,7 @@ export function ProjectCarousel({
                       variant="default"
                       size="sm"
                       asChild
-                      className="bg-[#15D3E0] hover:bg-[#13c4d1] cursor-pointer text-white font-medium w-full sm:w-auto"
+                      className="bg-[#15D3E0] hover:bg-[#13c4d1] cursor-pointer text-white dark:text-black font-medium w-full sm:w-auto"
                     >
                       <a
                         href={currentProject.githubLink}

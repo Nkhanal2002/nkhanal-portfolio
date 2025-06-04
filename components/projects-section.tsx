@@ -14,7 +14,8 @@ export function ProjectsSection() {
         "Sustainable solution helping students save money while reducing waste",
       ],
       image: "/Images/ShareSphereHomePage.png",
-      link: "https://github.com/EDe-Graft/ShareSphere",
+      githubLink: "https://github.com/EDe-Graft/ShareSphere",
+      webLink: "https://github.com/EDe-Graft/ShareSphere",
       technologies: [
         "React",
         "Express.js",
@@ -33,7 +34,8 @@ export function ProjectsSection() {
         "Demonstrates end-to-end web development skills",
       ],
       image: "/Images/ProductStoreHomeImg.png",
-      link: "https://github.com/Nkhanal2002/mern-product-store",
+      githubLink: "https://github.com/Nkhanal2002/mern-product-store",
+      webLink: "https://mern-product-store-1-t6dx.onrender.com/",
       technologies: ["React", "Node.js", "MongoDB", "Zustand", "Tailwind CSS"],
     },
     {
@@ -46,7 +48,8 @@ export function ProjectsSection() {
         "Dynamic emoji system that updates based on task completion",
       ],
       image: "/Images/wefitwellSS.png?height=400&width=600",
-      link: "https://ru-hackathon-six.vercel.app/",
+      githubLink: "https://github.com/dibasdauliya/ru-hackathon",
+      webLink: "https://ru-hackathon-six.vercel.app/",
       technologies: ["React", "Auth0", "Tailwind CSS"],
       devpostLink: "https://devpost.com/software/wefit-nc6k1r",
     },
@@ -60,7 +63,8 @@ export function ProjectsSection() {
         "⚠️ Demo purposes only - not for storing real sensitive data",
       ],
       image: "/Images/PasswordManagerHomePage.png?height=400&width=600",
-      link: "https://github.com/Nkhanal2002/password-manager",
+      githubLink: "https://github.com/Nkhanal2002/password-manager",
+      webLink: "https://v0-password-manager-nextjs.vercel.app",
       technologies: ["Next.js", "TypeScript", "Clerk", "shadcn/ui"],
     },
     {
@@ -73,7 +77,9 @@ export function ProjectsSection() {
         "Backend using Node.js, Express, and NeDB for data persistence",
       ],
       image: "/Images/TaskManagementWebApp.png?height=400&width=600",
-      link: "https://github.com/Nkhanal2002/FullStackWebFinalProject",
+      githubLink:
+        "https://github.com/Nkhanal2002/full-stack-web-final-project ",
+      webLink: "https://github.com/Nkhanal2002/full-stack-web-final-project ",
       technologies: ["HTML", "JavaScript", "Node.js", "NeDB", "Tailwind CSS"],
     },
     {
@@ -86,7 +92,8 @@ export function ProjectsSection() {
         "Provides accurate weather updates for any specified city",
       ],
       image: "/Images/WeatherAppImg.png?height=400&width=600",
-      link: "https://weather-web-app-mauve.vercel.app/",
+      githubLink: "https://github.com/Nkhanal2002/weather-web-app",
+      webLink: "https://weather-web-app-mauve.vercel.app/",
       technologies: ["React", "OpenWeather API", "Tailwind CSS"],
     },
     {
@@ -99,7 +106,8 @@ export function ProjectsSection() {
         "Demonstrates modern web development best practices",
       ],
       image: "/Images/PortfolioSS.png?height=400&width=600",
-      link: "https://nkhanal.vercel.app/",
+      githubLink: "https://github.com/Nkhanal2002/nkhanal-portfolio",
+      webLink: "https://nkhanal-portfolio.vercel.app/",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     },
     {
@@ -112,7 +120,8 @@ export function ProjectsSection() {
         "Search functionality to generate BMI reports by name",
       ],
       image: "/Images/BMIAppSS.png?height=400&width=600",
-      link: "https://github.com/Nkhanal2002/BMICalculatorApp",
+      githubLink: "https://github.com/Nkhanal2002/BMICalculatorApp",
+      webLink: "https://github.com/Nkhanal2002/BMICalculatorApp",
       technologies: ["Python", "Kivy", "JSON"],
     },
   ];

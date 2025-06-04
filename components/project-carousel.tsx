@@ -11,7 +11,8 @@ interface Project {
   title: string;
   description: string[];
   image: string;
-  link: string;
+  githubLink: string;
+  webLink: string;
   technologies: string[];
   devpostLink?: string;
 }
@@ -151,7 +152,7 @@ export function ProjectCarousel({
                       className="border-[#15D3E0]/30 hover:border-[#15D3E0] hover:bg-[#15D3E0]/10 sm:ml-4 dark:border-gray-700 dark:hover:bg-gray-700 font-medium w-full sm:w-auto"
                     >
                       <a
-                        href={currentProject.link}
+                        href={currentProject.webLink}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -210,7 +211,7 @@ export function ProjectCarousel({
                       className="bg-[#15D3E0] hover:bg-[#13c4d1] cursor-pointer text-white font-medium w-full sm:w-auto"
                     >
                       <a
-                        href={currentProject.link}
+                        href={currentProject.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

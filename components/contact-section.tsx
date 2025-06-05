@@ -133,7 +133,7 @@ export function ContactSection() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-[#15D3E0] hover:bg-[#13c4d1] text-white dark:text-black font-medium py-3 sm:py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] h-12 sm:h-14"
+                  className="w-full cursor-pointer bg-[#15D3E0] hover:bg-[#13c4d1] text-white dark:text-black font-semibold py-3 sm:py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] h-12 sm:h-14"
                 >
                   <Send className="mr-2 h-4 w-4" />
                   Send Message

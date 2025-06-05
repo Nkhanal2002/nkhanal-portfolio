@@ -101,7 +101,7 @@ export function AboutSection() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-2 rounded-md transition-all hover:cursor-pointer ${
+                className={`px-6 py-2 font-semibold rounded-md transition-all hover:cursor-pointer ${
                   activeTab === tab.id
                     ? "bg-[#15D3E0] hover:bg-[#13c4d1] text-white dark:text-black shadow-sm"
                     : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
@@ -213,7 +213,7 @@ export function AboutSection() {
 
                     <Button
                       asChild
-                      className="w-full bg-[#15D3E0] hover:bg-[#13c4d1] text-white"
+                      className="w-full bg-[#15D3E0] hover:bg-[#13c4d1] text-white dark:text-black"
                     >
                       <a href="#contact">Get In Touch</a>
                     </Button>

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Narayan Khanal - Computer Science student at Caldwell University. Full-stack developer specializing in React, Next.js, TypeScript, and modern web technologies. View my projects and experience.",
   keywords: [
     "Narayan Khanal",
+    "narayan khanal",
     "Software Engineer",
     "Full Stack Developer",
     "React Developer",
@@ -36,8 +37,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://nkhanal-portfolio.vercel.app",
-    title: "Narayan Khanal | CS Enthusiast & Software Engineer",
+    url: "https://narayankhanal.vercel.app",
+    title: "Narayan Khanal | CS Enthusiast",
     description:
       "Computer Science student and aspiring Software Engineer. Explore my projects, experience, and technical skills in full-stack web development.",
     siteName: "Narayan Khanal Portfolio",
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Narayan Khanal - Software Engineer Portfolio",
+        alt: "Narayan Khanal - Portfolio",
       },
     ],
   },
@@ -105,7 +106,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link rel="canonical" href="https://nkhanal-portfolio.vercel.app" />
+        <link rel="canonical" href="https://narayankhanal.vercel.app" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -114,7 +115,7 @@ export default function RootLayout({
               "@type": "Person",
               name: "Narayan Khanal",
               jobTitle: "Computer Science Student & Aspiring Software Engineer",
-              url: "https://nkhanal-portfolio.vercel.app",
+              url: "https://narayankhanal.vercel.app",
               sameAs: [
                 "https://www.linkedin.com/in/narayan-khanal-15a5b81aa/",
                 "https://github.com/Nkhanal2002",

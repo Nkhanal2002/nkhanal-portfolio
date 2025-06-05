@@ -58,9 +58,6 @@ export const metadata: Metadata = {
       "Computer Science student and aspiring Software Engineer. Explore my projects and technical skills.",
     images: ["/og-image.png"],
   },
-  verification: {
-    google: "xGhXi1joti9rFHISixCqMDuyWb9bUTvos5vIZDtjhEA",
-  },
   icons: {
     icon: [
       { url: "/Favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },

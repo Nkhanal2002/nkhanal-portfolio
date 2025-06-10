@@ -41,7 +41,7 @@ export function Header({ activeSection, onNavigate }: HeaderProps) {
                     onClick={() => handleNavClick(item.id)}
                     className={`links flex gap-1 justify-center items-center hover:cursor-pointer hover:border-b-2 hover:border-b-[#15D3E0] transition-all duration-100 ease-in-out ${
                       activeSection === item.id
-                        ? "border-b-2 border-b-[#15D3E0] text-[#15D3E0] font-medium"
+                        ? "text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066] border-b-2 border-b-[#15D3E0] dark:text-[#15D3E0] font-medium"
                         : ""
                     }`}
                   >

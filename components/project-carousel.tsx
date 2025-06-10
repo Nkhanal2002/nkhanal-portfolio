@@ -67,7 +67,7 @@ export function ProjectCarousel({
       <Button
         variant="outline"
         size="icon"
-        className="hidden sm:flex absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-gray-800 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-800 shadow-lg border-2 border-[#15D3E0]/20 hover:border-[#15D3E0]/40 transition-all duration-200 dark:border-gray-700"
+        className="hidden sm:flex absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-white cursor-pointer dark:bg-gray-800 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-800 shadow-lg border-2 border-[#15D3E0]/20 hover:border-[#15D3E0]/40 transition-all duration-200 dark:border-gray-700"
         onClick={goToPrevious}
       >
         <ChevronLeft className="h-5 w-5 text-[#15D3E0]" />
@@ -77,7 +77,7 @@ export function ProjectCarousel({
       <Button
         variant="outline"
         size="icon"
-        className="hidden sm:flex absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-gray-800 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-800 shadow-lg border-2 border-[#15D3E0]/20 hover:border-[#15D3E0]/40 transition-all duration-200 dark:border-gray-700"
+        className="hidden sm:flex absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-white cursor-pointer dark:bg-gray-800 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-800 shadow-lg border-2 border-[#15D3E0]/20 hover:border-[#15D3E0]/40 transition-all duration-200 dark:border-gray-700"
         onClick={goToNext}
       >
         <ChevronRight className="h-5 w-5 text-[#15D3E0]" />

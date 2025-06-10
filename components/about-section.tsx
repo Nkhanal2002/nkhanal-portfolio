@@ -122,13 +122,15 @@ export function AboutSection() {
                   <div className="md:col-span-2 space-y-4 text-gray-700 dark:text-gray-300">
                     <p>
                       Hello 👋! I&apos;m{" "}
-                      <strong className="text-[#15D3E0]">Narayan Khanal</strong>
+                      <strong className="text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066] dark:text-[#15D3E0]">
+                        Narayan Khanal
+                      </strong>
                       , a Computer Science undergraduate at Caldwell University,
                       NJ, originally from Nepal 🇳🇵.
                     </p>
                     <p>
                       As an aspiring{" "}
-                      <strong className="text-[#15D3E0]">
+                      <strong className="text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066] dark:text-[#15D3E0]">
                         Software Engineer
                       </strong>
                       , I focus on full-stack web development with
@@ -148,12 +150,12 @@ export function AboutSection() {
                         "Full-Stack Web Development",
                         "UI/UX Design",
                         "Problem Solving",
+                        "IT Troubleshooting & Support",
                         "Open Source",
-                        "IT Troubleshooting",
                       ].map((interest) => (
                         <Badge
                           key={interest}
-                          className="bg-[#15D3E0]/5 border-[#15D3E0]/20 text-[#15D3E0] dark:bg-gray-700 dark:border-gray-600"
+                          className=" bg-[#15D3E0]/5 border-[#15D3E0]/20 text-[#15D3E0] dark:bg-gray-700 dark:border-gray-600"
                         >
                           {interest}
                         </Badge>

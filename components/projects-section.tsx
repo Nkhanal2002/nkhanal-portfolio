@@ -107,7 +107,7 @@ export function ProjectsSection() {
       ],
       image: "/Images/PortfolioSS.png?height=400&width=600",
       githubLink: "https://github.com/Nkhanal2002/nkhanal-portfolio",
-      webLink: "https://nkhanal-portfolio.vercel.app/",
+      webLink: "https://narayankhanal.vercel.app/",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     },
     {

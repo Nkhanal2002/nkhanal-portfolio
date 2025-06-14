@@ -12,13 +12,13 @@ export function AboutSection() {
 
   const programmingLanguages = [
     { name: "JavaScript", level: 90, iconImageLink: "/Images/JSlogo.png" },
-    { name: "TypeScript", level: 85, iconImageLink: "/Images/ts-logo.png" },
-    { name: "Python", level: 80, iconImageLink: "/Images/Pythonlogo.png" },
+    { name: "TypeScript", level: 80, iconImageLink: "/Images/ts-logo.png" },
+    { name: "Python", level: 85, iconImageLink: "/Images/Pythonlogo.png" },
     { name: "HTML/CSS", level: 95, iconImageLink: "/Images/Html5logo.png" },
   ];
 
   const frameworks = [
-    { name: "Next.js", level: 88, iconImageLink: "/Images/NextJSlogo.webp" },
+    { name: "Next.js", level: 85, iconImageLink: "/Images/NextJSlogo.webp" },
     { name: "React.js", level: 90, iconImageLink: "/Images/reactLogo.svg" },
     {
       name: "Tailwind CSS",
@@ -29,7 +29,7 @@ export function AboutSection() {
   ];
 
   const tools = [
-    { name: "MongoDB", level: 70, iconImageLink: "/Images/MongoDBLogo.svg" },
+    { name: "MongoDB", level: 75, iconImageLink: "/Images/MongoDBLogo.svg" },
     {
       name: "PostgreSQL",
       level: 75,
@@ -167,7 +167,7 @@ export function AboutSection() {
                     <div className="grid grid-cols-2 gap-3 text-center">
                       <div className="bg-[#15D3E0]/5 dark:bg-gray-700 p-3 rounded-lg">
                         <div className="text-xl font-bold text-[#15D3E0]">
-                          3+
+                          4+
                         </div>
                         <div className="text-xs text-gray-600 dark:text-gray-400">
                           Years Coding
@@ -191,7 +191,7 @@ export function AboutSection() {
                       </div>
                       <div className="bg-[#15D3E0]/5 dark:bg-gray-700 p-3 rounded-lg">
                         <div className="text-xl font-bold text-[#15D3E0]">
-                          50+
+                          100+
                         </div>
                         <div className="text-xs text-gray-600 dark:text-gray-400">
                           Students Helped

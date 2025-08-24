@@ -1,4 +1,39 @@
+"use client";
+
+import { useState, useEffect } from "react";
+
 export function HeroSection() {
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [currentText, setCurrentText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  const roles = ["SWE", "Full-Stack Developer", "IT Support Specialist"];
+
+  useEffect(() => {
+    const currentRole = roles[currentRoleIndex];
+    const typingSpeed = isDeleting ? 50 : 100;
+    const pauseTime = isDeleting ? 500 : 2000;
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting && currentText === currentRole) {
+        // Pause before deleting
+        setTimeout(() => setIsDeleting(true), pauseTime);
+      } else if (isDeleting && currentText === "") {
+        // Move to next role
+        setIsDeleting(false);
+        setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
+      } else if (isDeleting) {
+        // Delete character
+        setCurrentText(currentRole.substring(0, currentText.length - 1));
+      } else {
+        // Type character
+        setCurrentText(currentRole.substring(0, currentText.length + 1));
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [currentText, isDeleting, currentRoleIndex, roles]);
+
   return (
     <div
       className="eachSection bg-gray-100 dark:bg-gray-900 text-foreground flex justify-center items-center min-h-screen transition-colors"
@@ -10,17 +45,11 @@ export function HeroSection() {
             <h1 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066] dark:text-[#15D3E0] md:text-2xl font-bold lg:text-3xl text-custom-teal">
               Narayan Khanal
             </h1>
-            <h2 className="text-base sm:text-lg md:text-xl">
-              A Student at{" "}
-              <a
-                href="https://www.caldwell.edu/"
-                target="_blank"
-                className="hover:underline"
-                rel="noreferrer"
-              >
-                Caldwell University
-              </a>{" "}
-              | An Aspiring SWE
+            <h2 className="text-base sm:text-lg md:text-xl mt-2">
+              <span className="inline-block min-w-[120px] sm:min-w-[200px]">
+                {currentText}
+                <span className="animate-pulse">|</span>
+              </span>
             </h2>
             <p className="mt-2 text-[1.1rem]">
               A computer science enthusiast wanting to contribute to the tech

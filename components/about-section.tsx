@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Code, Database, Globe } from "lucide-react";
+import { Code, Database, Globe, Award, ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 export function AboutSection() {
@@ -37,6 +37,36 @@ export function AboutSection() {
     },
     { name: "Git", level: 85, iconImageLink: "/Images/GitLogo.png" },
     { name: "Figma", level: 80, iconImageLink: "/Images/FigmaLogo.png" },
+  ];
+
+  const certificates = [
+    {
+      name: "Google IT Support Professional Certificate",
+      issuer: "Google",
+      issueDate: "Aug 2025",
+      description:
+        "Comprehensive program of six courses consisting Technical Support Fundamentals, The Bits and Bytes of Computer Networking, Operating Systems and You: Become a Power User, System Administration and IT Infrastructure Services, IT Security: Defense against the digital dark arts, and Accelerate Your Job Search with AI.",
+      skills: [
+        "Technical Support",
+        "Network Protocols",
+        "TCP/IP",
+        "Cloud Computing",
+        "Command Line Interface",
+        "Linux",
+        "Network Security",
+        "Domain Name System (DNS)",
+        "Computer Networking",
+        "Applicant Tracking Systems",
+        "Cybersecurity",
+        "Customer Service",
+        "Linux File Systems",
+        "Directory Service",
+        "Lightweight Directory Access Protocol (LDAP)",
+      ],
+      credentialUrl:
+        "https://www.coursera.org/account/accomplishments/specialization/certificate/G58X53SMCOY7",
+      logo: "/Images/GoogleLogo.png",
+    },
   ];
 
   const SkillCard = ({
@@ -76,6 +106,7 @@ export function AboutSection() {
   const tabs = [
     { id: "overview", label: "About" },
     { id: "skills", label: "Skills" },
+    { id: "certificates", label: "Certificates" },
   ];
 
   return (
@@ -131,11 +162,15 @@ export function AboutSection() {
                     <p>
                       As an aspiring{" "}
                       <strong className="text-transparent bg-clip-text bg-gradient-to-r from-[#15D3E0] via-[#398a99] to-[#136066] dark:text-[#15D3E0]">
-                        Software Engineer
+                        Software Engineer, IT Support Specialist, and Full-Stack
+                        Developer
                       </strong>
                       , I focus on full-stack web development with
-                      JavaScript/TypeScript, React, Next.js, and Node.js. I
-                      enjoy both frontend design and backend architecture.
+                      JavaScript/TypeScript, React, Next.js, and Node.js, while
+                      also providing technical support and troubleshooting
+                      solutions. I enjoy both frontend design and backend
+                      architecture, as well as solving complex IT infrastructure
+                      challenges.
                     </p>
                     <p>
                       Beyond coding, I&apos;m active in leadership roles and
@@ -271,6 +306,94 @@ export function AboutSection() {
                   ))}
                 </div>
               </div>
+            </div>
+          )}
+          {activeTab === "certificates" && (
+            <div className="space-y-6">
+              <div className="flex items-center space-x-2 mb-6">
+                <Award className="h-5 w-5 text-[#15D3E0]" />
+                <h2 className="md:text-xl font-bold text-gray-900 dark:text-white">
+                  Professional Certificates
+                </h2>
+              </div>
+
+              {certificates.map((cert, index) => (
+                <Card
+                  key={index}
+                  className="border-0 bg-white dark:bg-gray-800 shadow-lg"
+                >
+                  <CardContent className="p-6">
+                    <div className="flex flex-col md:flex-row gap-6">
+                      {/* Certificate Logo */}
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 bg-[#15D3E0]/10 dark:bg-gray-700 rounded-lg flex items-center justify-center">
+                          <Image
+                            src={cert.logo || "/placeholder.svg"}
+                            alt={`${cert.issuer} logo`}
+                            width={60}
+                            height={60}
+                            className="w-12 h-12 object-contain"
+                          />
+                        </div>
+                      </div>
+
+                      {/* Certificate Details */}
+                      <div className="flex-1 space-y-4">
+                        <div>
+                          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                            {cert.name}
+                          </h3>
+                          <div className="flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-400">
+                            <span className="font-medium">{cert.issuer}</span>
+                            <span>•</span>
+                            <span>Issued {cert.issueDate}</span>
+                          </div>
+                        </div>
+
+                        <p className="text-gray-700 dark:text-gray-300">
+                          {cert.description}
+                        </p>
+
+                        {/* Skills Gained */}
+                        <div>
+                          <h4 className="font-medium text-gray-900 dark:text-white mb-2">
+                            Skills Gained:
+                          </h4>
+                          <div className="flex flex-wrap gap-2">
+                            {cert.skills.map((skill, skillIndex) => (
+                              <Badge
+                                key={skillIndex}
+                                className="bg-[#15D3E0]/10 border-[#15D3E0]/20 text-[#15D3E0] dark:bg-gray-700 dark:border-gray-600 text-xs"
+                              >
+                                {skill}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Credential Link */}
+                        <div className="pt-2">
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="border-[#15D3E0] text-[#15D3E0] hover:bg-[#15D3E0] hover:text-white dark:hover:text-black bg-transparent"
+                          >
+                            <a
+                              href={cert.credentialUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center space-x-2"
+                            >
+                              <span>View Credential</span>
+                              <ExternalLink className="h-4 w-4" />
+                            </a>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           )}
         </div>

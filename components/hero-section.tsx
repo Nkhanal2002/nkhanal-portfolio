@@ -90,7 +90,7 @@ export function HeroSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <i className="mt-1 fa-brands fa-linkedin text-xl hover:cursor-pointer hover:rotate-[20deg] hover:text-blue-400 transition duration-150 ease-in"></i>
+                      <i className="mt-1 fa-brands fa-linkedin text-xl hover:cursor-pointer hover:rotate-[20deg] hover:text-blue-400"></i>
                     </a>
                   </div>
 
@@ -102,7 +102,7 @@ export function HeroSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <i className="mt-1 fa-brands fa-github text-xl hover:cursor-pointer hover:rotate-[20deg] hover:text-blue-400 transition duration-150 ease-in"></i>
+                      <i className="mt-1 fa-brands fa-github text-xl hover:cursor-pointer hover:rotate-[20deg] hover:text-blue-400"></i>
                     </a>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ export function HeroSection() {
                   <a
                     href="mailto:narayankhanal435@gmail.com"
                     target="_blank"
-                    className="hover:cursor-pointer text-base hover:text-custom-teal transition-all duration-150 ease-in"
+                    className="hover:cursor-pointer text-base hover:text-custom-teal"
                     rel="noreferrer"
                   >
                     narayankhanal435@gmail.com
@@ -136,7 +136,7 @@ export function HeroSection() {
           <img
             src="/Images/Avatar.png?height=224&width=224"
             alt="Narayan Khanal's Avatar"
-            className="mt-8 myimage mx-auto w-[9rem] sm:-mt-10 sm:w-[14rem] ease-in duration-300"
+            className="mt-8 myimage mx-auto w-[9rem] sm:-mt-10 sm:w-[14rem] ease-in "
             title="Narayan Khanal's Avatar"
           />
         </section>

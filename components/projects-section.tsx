@@ -39,6 +39,20 @@ export function ProjectsSection() {
       technologies: ["React", "Node.js", "MongoDB", "Zustand", "Tailwind CSS"],
     },
     {
+      title: "NexusDesk – IT Support Ticketing System",
+      description: [
+        "Interactive IT helpdesk platform with ticket creation, status tracking, and priority management",
+        "Professional, responsive dashboard built with React and TailwindCSS for a clean user experience",
+        "Analytics dashboard displaying SLA compliance, resolution rates, and average response times for operational insights",
+        "Deployed on Vercel with production-ready configuration, showcasing full-cycle development and deployment skills",
+      ],
+      image: "/Images/NexusDeskDashboard.png",
+      githubLink: "https://github.com/Nkhanal2002/nexus-desk",
+      webLink: "https://nexus-desk.vercel.app/",
+      technologies: ["Next.js", "Tailwind CSS", "shadcn/ui", "Vercel"],
+    },
+
+    {
       title: "WeFitWell App",
       description: [
         "Fitness web application developed during MLH hackathon at Rutgers University",

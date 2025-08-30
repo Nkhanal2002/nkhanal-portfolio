@@ -1,6 +1,17 @@
 export function ExperienceSection() {
   const experiences = [
     {
+      title: "IT Support Extern",
+      company: "YMCA",
+      location: "Livingston & East Orange, NJ",
+      period: "Aug 2025 – Dec 2025",
+      responsibilities: [
+        "Resolve 20+ weekly support requests with 95% first-call resolution rate across hardware, software, and network issues",
+        "Support 100+ users including senior citizens with account management, system access, and device troubleshooting",
+        "Configure and maintain workstations, printers, and mobile devices, reducing downtime by 30%",
+      ],
+    },
+    {
       title: "GDG Marketing and Communications Lead",
       company: "Caldwell University",
       location: "Caldwell, NJ",

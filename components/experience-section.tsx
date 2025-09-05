@@ -4,21 +4,11 @@ export function ExperienceSection() {
       title: "IT Support Extern",
       company: "YMCA",
       location: "Livingston & East Orange, NJ",
-      period: "Aug 2025 – Dec 2025",
+      period: "Aug 2025 – Present",
       responsibilities: [
         "Resolve 20+ weekly support requests with 95% first-call resolution rate across hardware, software, and network issues",
         "Support 100+ users including senior citizens with account management, system access, and device troubleshooting",
         "Configure and maintain workstations, printers, and mobile devices, reducing downtime by 30%",
-      ],
-    },
-    {
-      title: "GDG Marketing and Communications Lead",
-      company: "Caldwell University",
-      location: "Caldwell, NJ",
-      period: "Aug 2024 – Present",
-      responsibilities: [
-        "Lead the design team, using Figma and Canva to produce 30+ designs, increasing event attendance by 30%",
-        "Create 50+ promotional materials, boosting club's online engagement by 25%",
       ],
     },
     {
@@ -42,6 +32,16 @@ export function ExperienceSection() {
       ],
     },
     {
+      title: "GDG Marketing and Communications Lead",
+      company: "Caldwell University",
+      location: "Caldwell, NJ",
+      period: "Aug 2024 – Aug 2025",
+      responsibilities: [
+        "Led design and branding for 10+ club events using Figma and Canva, ensuring consistent visual identity",
+        "Created 50+ promotional materials that increased event engagement and attendance by 25%",
+      ],
+    },
+    {
       title: "Teaching Assistant",
       company: "Caldwell University",
       location: "Caldwell, NJ",
@@ -49,6 +49,16 @@ export function ExperienceSection() {
       responsibilities: [
         "Facilitated 12+ interactive lab sessions, improving students' assessment performance by 25% through hands-on coding exercises and clear technical explanations",
         "Elevated students' scores by 20% by breaking down complex programming concepts into both verbal and code-based demonstrations",
+      ],
+    },
+    {
+      title: "Media Assistant",
+      company: "Caldwell University",
+      location: "Caldwell, NJ",
+      period: "Aug 2022 – Aug 2023",
+      responsibilities: [
+        "Configured and maintained multimedia systems for 30+ campus events with 99% uptime",
+        "Delivered on-site IT support for theater and university events with 200+ attendees",
       ],
     },
   ];

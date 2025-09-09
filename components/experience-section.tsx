@@ -3,7 +3,7 @@ export function ExperienceSection() {
     {
       title: "IT Support Extern",
       company: "YMCA",
-      location: "Livingston & East Orange, NJ",
+      location: "Livingston, NJ",
       period: "Aug 2025 – Present",
       responsibilities: [
         "Resolve 20+ weekly support requests with 95% first-call resolution rate across hardware, software, and network issues",

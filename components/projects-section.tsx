@@ -13,7 +13,7 @@ export function ProjectsSection() {
         "Developed secure backend with Node.js, MongoDB, and email verification",
       ],
       image: "/Images/stunotes.png",
-      githubLink: "https://github.com/narayankhanal435/stunotes",
+      githubLink: "https://github.com/Nkhanal2002/stu-notes-frontend",
       webLink: "https://stunotes.caldwellwebservices.com/",
       technologies: [
         "React.js",

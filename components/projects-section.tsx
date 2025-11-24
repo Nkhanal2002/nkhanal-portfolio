@@ -5,6 +5,28 @@ import { ProjectCarousel } from "@/components/project-carousel";
 export function ProjectsSection() {
   const allProjects = [
     {
+      title: "StuNotes – AI-Powered Study Assistant",
+      description: [
+        "AI-driven platform that transcribes lectures, organizes notes, and generates quizzes",
+        "Built with React, Tailwind, and shadcn/ui for a modern, responsive UI",
+        "Integrated real-time speech-to-text and Gemini API for smart note generation",
+        "Developed secure backend with Node.js, MongoDB, and email verification",
+      ],
+      image: "/Images/stunotes.png",
+      githubLink: "https://github.com/narayankhanal435/stunotes",
+      webLink: "https://stunotes.caldwellwebservices.com/",
+      technologies: [
+        "React.js",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Speech Recognition",
+        "Node.js",
+        "MongoDB",
+        "Nodemailer",
+        "Gemini 2.5 Flash",
+      ],
+    },
+    {
       title: "ShareSphere Web App",
       description: [
         "Collaborated with a friend to build a full-stack platform for student resource sharing",
